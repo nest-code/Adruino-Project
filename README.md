@@ -5,3 +5,4 @@ List :
 2. Analog LED
 3. Trafic Light
 4. Push Button
+5. Buzzer
