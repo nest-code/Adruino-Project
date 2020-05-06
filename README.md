@@ -8,3 +8,4 @@ List :
 5. Buzzer
 6. Buzzer Mario Bros
 7. Servo 
+8. Servo-Potensimeter
