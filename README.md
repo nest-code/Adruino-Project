@@ -9,3 +9,4 @@ List :
 6. Buzzer Mario Bros
 7. Servo 
 8. Servo-Potensimeter
+9. Dynamo (DC Motors)
