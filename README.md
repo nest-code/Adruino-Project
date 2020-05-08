@@ -10,3 +10,4 @@ List :
 7. Servo 
 8. Servo-Potensimeter
 9. Dynamo (DC Motors)
+10. Ultrasonic HCSR04 (Sensor Jarak)
