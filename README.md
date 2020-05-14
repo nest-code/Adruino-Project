@@ -12,3 +12,4 @@ List :
 8. Servo-Potensimeter
 9. Dynamo (DC Motors)
 10. Ultrasonic HCSR04 (Sensor Jarak)
+11. Alaram (LED-Buzzer-PushButton)
