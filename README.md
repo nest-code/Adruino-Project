@@ -1,5 +1,7 @@
 # Membuat Project Arduino
 
+- **ARDUINO UNO**
+
 List :
 0. Test Arduino
 1. LED (Light Emitting Diode)
@@ -13,3 +15,5 @@ List :
 9. Dynamo (DC Motors)
 10. Ultrasonic HCSR04 (Sensor Jarak)
 11. Alaram (LED-Buzzer-PushButton)
+
+![arduino_uno](https://user-images.githubusercontent.com/33409476/82128096-8e0f6c80-97e2-11ea-8103-d8d0200c7a06.png)
