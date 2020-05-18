@@ -1,34 +1,30 @@
- const int ledPin = 13;
- const int buzzerPin = 12;
- const int ldrPin = A0;
- 
+#include "DHT.h"
+
+#define DHTPIN 2     
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+
 void setup() {
-
-Serial.begin(9600);
-pinMode(ledPin, OUTPUT);
-pinMode(buzzerPin, OUTPUT);
-pinMode(ldrPin, INPUT);
+  Serial.begin(9600);
+  Serial.println("Tes Suhu & Kelembaban");
+  dht.begin();
 }
 
-void loop () {
-int ldrStatus = analogRead(ldrPin); // membaca Value
-
-if (ldrStatus >= 400) {
-  tone(buzzerPin, 100);
-  digitalWrite(ledPin, HIGH);
-  delay(100);
-
-  noTone(buzzerPin);
-  digitalWrite(ledPin, LOW);
-  delay(100);
- 
-  Serial.println("------ALARAM AKTIF--------");
-  }else {
-    noTone(buzzerPin);
-    digitalWrite(ledPin, LOW);
-    Serial.println("ALARAM TIDAK AKTIF");
-    
-    }
+void loop() {
+  delay(2000);
+  float t = dht.readTemperature(); //suhu
+  float h = dht.readHumidity(); //kelembaban
   
+  if (isnan(t) || isnan(h)) {
+    Serial.println("Periksa konfigurasi pin/kabelnya");
+    Serial.println("Sensor tidak terbaca");
+    return;
+  }
+
+  Serial.print("Suhu : ");
+  Serial.print(t);
+  Serial.print(" *Ct");
+  Serial.print("Kelembaban: ");
+  Serial.print(h);
+  Serial.println(" %");
 }
-  
