@@ -18,3 +18,10 @@ List :
 10. Ultrasonic HCSR04 (Sensor Jarak)
 11. Alaram (LED-Buzzer-PushButton)
 12. RGB LED (Red Green Bluee - Light Emitting Diode )
+
+
+
+Project Plan
+- Smart Trash
+- CNC (Cutting/Line)
+- Smart Room
